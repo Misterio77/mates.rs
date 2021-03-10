@@ -15,7 +15,7 @@ pub fn app() -> App<'static, 'static> {
                     .about("Search for contact, return just the filename.")
                     .arg(Arg::with_name("query").index(1)))
         .subcommand(SubCommand::with_name("email-query")
-                    .about("Search for contact, return \"name <email>\".")
+                    .about("Search for contact, return 'name <email>'.")
                     .arg(Arg::with_name("query").index(1)))
         .subcommand(SubCommand::with_name("add")
                     .about("Take mail from stdin, add sender to contacts. Print filename."))
